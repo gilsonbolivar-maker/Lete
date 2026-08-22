@@ -321,11 +321,27 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
+  /* painel do hero: mesma linguagem do .role-pill, com mais corpo
+     porque aqui passa texto corrido, não uma palavra solta */
+  .hero-card {
+    display: inline-block;
+    max-width: min(100%, 54ch);
+    padding: clamp(20px, 2.6vw, 32px) clamp(22px, 3vw, 38px) clamp(22px, 2.8vw, 34px);
+    background: rgba(20, 16, 10, 0.46);
+    border: 1px solid rgba(251, 246, 234, 0.35);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+  }
+  @supports not (backdrop-filter: blur(10px)) {
+    .hero-card { background: rgba(20, 16, 10, 0.62); }
+  }
+  .hero-card > :last-child { margin-bottom: 0; }
+
   .roles {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 28px;
+    margin-top: 20px;
     opacity: 0;
     animation: rise 0.45s 0.22s ease forwards;
   }
@@ -648,9 +664,11 @@
 <section class="hero">
   <img class="bg" src="assets/img/hero-instalacao-letras.jpg" alt="Ilustração, a partir de uma foto, de Lete Diedrichs pintando uma instalação de letras coloridas ao ar livre">
   <div class="hero-content wrap">
-    <div class="hero-eyebrow">Artista Plástica &amp; Muralista</div>
-    <h1>Lete<br>Diedrichs</h1>
-    <p class="tag">Transformo paredes, telas e vozes em <b>cor</b>. Arte plástica, murais que reinventam ambientes e aulas de canto presenciais — feitas com a mesma paixão de família.</p>
+    <div class="hero-card">
+      <div class="hero-eyebrow">Artista Plástica &amp; Muralista</div>
+      <h1>Lete<br>Diedrichs</h1>
+      <p class="tag">Transformo paredes, telas e vozes em <b>cor</b>. Arte plástica, murais que reinventam ambientes e aulas de canto presenciais — feitas com a mesma paixão de família.</p>
+    </div>
     <div class="roles">
       <span class="role-pill">Artista Plástica</span>
       <span class="role-pill">Muralista</span>
