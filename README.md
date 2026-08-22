@@ -19,6 +19,7 @@ assets/img/           fotos usadas nas seções
 | `#muralista` | Galeria de murais e arte em parede              |
 | `#canto`     | Aulas de canto presenciais                      |
 | `#familia`   | Família & arte                                  |
+| `#pensamento`| Cartão com a frase que a Lete carrega           |
 | `#contato`   | Chamada final e redes sociais                   |
 
 ## Rodar localmente
