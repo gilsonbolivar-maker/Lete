@@ -6,7 +6,7 @@
 <title>Lete Diedrichs — Artista Plástica, Muralista &amp; Professora de Canto</title>
 <meta name="description" content="Lete Diedrichs transforma paredes, telas e vozes em cor: arte plástica, murais que reinventam ambientes e aulas de canto presenciais.">
 <meta name="author" content="Lete Diedrichs">
-<meta name="theme-color" content="#F8F3E7">
+<meta name="theme-color" content="#F5F2EA">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23D6401B'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23F8F3E7'%3EL%3C/text%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
@@ -16,64 +16,134 @@
 <meta property="og:image" content="assets/img/hero-instalacao-letras.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Work+Sans:wght@400;500;600;700&amp;family=Caveat:wght@500;600;700&amp;display=swap">
 </head>
 <body>
 <style>
+  /* Fontes servidas pelo próprio site, em assets/fonts/ */
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url(assets/fonts/bricolage-200-800-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url(assets/fonts/bricolage-200-800-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(assets/fonts/worksans-400-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(assets/fonts/worksans-400-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(assets/fonts/caveat-600-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(assets/fonts/caveat-600-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
 
   :root {
-    --bg: #F8F3E7;
-    --bg-panel: #F0E7D2;
-    --surface: #FFFEFA;
-    --surface-2: #F8F1DE;
-    --ink: #241F1A;
-    --ink-soft: #5A5148;
-    --ink-faint: #857A6B;
-    --border: rgba(36,31,26,0.12);
-    /* paleta: Mural Tropical */
-    --blue: #2657A0;
-    --coral: #D6401B;
-    --yellow: #E3A62F;
-    --violet: #6A4791;
-    --green: #4C7A4A;
-    --shadow: 0 18px 40px -22px rgba(36,31,26,0.28);
+    --bg: #F5F2EA;
+    --bg-panel: #E9E5D9;
+    --surface: #FFFDF7;
+    --surface-2: #F0ECE0;
+    --ink: #1F2622;
+    --ink-soft: #4F5A54;
+    --ink-faint: #7E8880;
+    --border: rgba(31,38,34,0.12);
+    /* paleta: Bossa — os nomes vêm da versão anterior; hoje valem estas cores */
+    --coral: #14776E;   /* teal */
+    --yellow: #D3A017;  /* mostarda */
+    --blue: #D4685C;    /* coral-rosé */
+    --violet: #23446B;  /* marinho */
+    --green: #7C5678;   /* ameixa */
+    /* texto sobre foto */
+    --on-media: #FBFDF9;
+    --on-media-soft: #DCE6DF;
+    /* faixa escura da seção de canto */
+    --deep: #17332F;
+    --on-deep: #EFF6F1;
+    --on-deep-soft: #C6D8CE;
+    --on-deep-faint: #9DB5A9;
+    --deep-accent: #EEC15E;
+    --shadow: 0 18px 40px -22px rgba(31,38,34,0.30);
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #2E2718;
-      --bg-panel: #38301E;
-      --surface: #413824;
-      --surface-2: #4C4128;
-      --ink: #F6F0E1;
-      --ink-soft: #D6CBB2;
-      --ink-faint: #AD9F86;
-      --border: rgba(246,240,225,0.16);
-      --blue: #86AEEC;
-      --coral: #F29165;
-      --yellow: #F2C568;
-      --violet: #BC9FE2;
-      --green: #93C289;
-      --shadow: 0 22px 48px -20px rgba(0,0,0,0.5);
+      --bg: #17201E;
+      --bg-panel: #1F2A27;
+      --surface: #273431;
+      --surface-2: #2E3D39;
+      --ink: #EFF2EC;
+      --ink-soft: #C0CBC4;
+      --ink-faint: #8FA098;
+      --border: rgba(239,242,236,0.16);
+      --coral: #4FBCAE;
+      --yellow: #EEC15E;
+      --blue: #F0938A;
+      --violet: #7FA5D6;
+      --green: #C095BC;
+      --on-media: #FBFDF9;
+      --on-media-soft: #DCE6DF;
+      --deep: #10201E;
+      --on-deep: #EFF2EC;
+      --on-deep-soft: #BFD0C7;
+      --on-deep-faint: #90A79C;
+      --deep-accent: #EEC15E;
+      --shadow: 0 22px 48px -20px rgba(0,0,0,0.55);
     }
   }
   :root[data-theme="dark"] {
-    --bg: #2E2718;
-    --bg-panel: #38301E;
-    --surface: #413824;
-    --surface-2: #4C4128;
-    --ink: #F6F0E1;
-    --ink-soft: #D6CBB2;
-    --ink-faint: #AD9F86;
-    --border: rgba(246,240,225,0.16);
-    --blue: #86AEEC;
-    --coral: #F29165;
-    --yellow: #F2C568;
-    --violet: #BC9FE2;
-    --green: #93C289;
-    --shadow: 0 22px 48px -20px rgba(0,0,0,0.5);
+    --bg: #17201E;
+    --bg-panel: #1F2A27;
+    --surface: #273431;
+    --surface-2: #2E3D39;
+    --ink: #EFF2EC;
+    --ink-soft: #C0CBC4;
+    --ink-faint: #8FA098;
+    --border: rgba(239,242,236,0.16);
+    --coral: #4FBCAE;
+    --yellow: #EEC15E;
+    --blue: #F0938A;
+    --violet: #7FA5D6;
+    --green: #C095BC;
+    --on-media: #FBFDF9;
+    --on-media-soft: #DCE6DF;
+    --deep: #10201E;
+    --on-deep: #EFF2EC;
+    --on-deep-soft: #BFD0C7;
+    --on-deep-faint: #90A79C;
+    --deep-accent: #EEC15E;
+    --shadow: 0 22px 48px -20px rgba(0,0,0,0.55);
   }
 
   * { box-sizing: border-box; }
@@ -121,7 +191,7 @@
   .wrap {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 64px);
+    padding: 0 clamp(30px, 6vw, 96px);
   }
 
   /* ---------- swatch divider ---------- */
@@ -150,7 +220,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px clamp(20px, 5vw, 64px);
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px clamp(30px, 6vw, 96px);
   }
   .nav .mark {
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -206,8 +278,8 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: 0 clamp(20px, 5vw, 64px) clamp(40px, 6vw, 76px);
-    color: #F6F1E4;
+    padding: 0 clamp(30px, 6vw, 96px) clamp(60px, 8vw, 104px);
+    color: var(--on-media);
   }
   .hero-eyebrow {
     display: inline-flex;
@@ -217,7 +289,7 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 600;
-    color: #E9DFC6;
+    color: var(--on-media-soft);
     margin-bottom: 18px;
     opacity: 0;
     animation: rise 0.4s 0.05s ease forwards;
@@ -230,7 +302,7 @@
   }
   .hero h1 {
     font-size: clamp(3rem, 9vw, 6.4rem);
-    color: #FBF6EA;
+    color: var(--on-media);
     opacity: 0;
     animation: rise 0.45s 0.1s ease forwards;
   }
@@ -238,12 +310,12 @@
     margin-top: 18px;
     max-width: 46ch;
     font-size: clamp(1.05rem, 2vw, 1.32rem);
-    color: #EFE6D2;
+    color: var(--on-media-soft);
     font-weight: 400;
     opacity: 0;
     animation: rise 0.45s 0.16s ease forwards;
   }
-  .hero p.tag b { color: #FBF6EA; font-weight: 600; }
+  .hero p.tag b { color: var(--on-media); font-weight: 600; }
   @keyframes rise {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -259,7 +331,7 @@
   }
   .role-pill {
     border: 1px solid rgba(251,246,234,0.35);
-    color: #FBF6EA;
+    color: var(--on-media);
     background: rgba(20,16,10,0.28);
     padding: 8px 16px;
     border-radius: 999px;
@@ -270,7 +342,11 @@
 
   /* ---------- section shell ---------- */
   section { position: relative; }
-  .section-pad { padding: clamp(64px, 10vw, 120px) 0; }
+  /* só vertical: o recuo lateral é do .wrap, e o atalho 'padding' o zerava */
+  .section-pad {
+    padding-top: clamp(88px, 12vw, 152px);
+    padding-bottom: clamp(88px, 12vw, 152px);
+  }
   .section-head {
     display: flex;
     flex-direction: column;
@@ -371,7 +447,7 @@
     left: 0; right: 0; bottom: 0;
     padding: 18px 18px 14px;
     background: linear-gradient(0deg, rgba(15,12,8,0.82), rgba(15,12,8,0));
-    color: #F6F1E4;
+    color: var(--on-media);
     font-size: 0.92rem;
     font-weight: 500;
   }
@@ -381,17 +457,17 @@
     font-size: 0.7rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #E9DFC6;
+    color: var(--on-media-soft);
     margin-bottom: 4px;
     font-weight: 600;
   }
 
   /* ---------- canto (stage panel) ---------- */
   .canto {
-    background: #35301D;
-    color: #F8F2E4;
+    background: var(--deep);
+    color: var(--on-deep);
   }
-  .canto .eyebrow, .canto .section-head p { color: #D3C7AA; }
+  .canto .eyebrow, .canto .section-head p { color: var(--on-deep-faint); }
   .canto-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -416,18 +492,18 @@
   .canto-text p {
     font-size: 1.12rem;
     line-height: 1.75;
-    color: #E6DCC5;
+    color: var(--on-deep-soft);
     max-width: 52ch;
   }
   .canto-text p + p { margin-top: 1.1em; }
-  .canto-text strong { color: #F8F2E4; }
+  .canto-text strong { color: var(--on-deep); }
   .canto-quote {
     margin-top: 30px;
     padding-left: 20px;
-    border-left: 2px solid var(--coral);
+    border-left: 2px solid var(--deep-accent);
     font-family: 'Caveat', cursive;
     font-size: 1.7rem;
-    color: #F2C568;
+    color: var(--deep-accent);
     line-height: 1.3;
   }
 
@@ -542,7 +618,9 @@
   .social-line b { color: var(--ink); }
 
   footer.site {
-    padding: 26px clamp(20px, 5vw, 64px);
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 34px clamp(30px, 6vw, 96px);
     background: var(--bg-panel);
     border-top: 1px solid var(--border);
     display: flex;
@@ -569,7 +647,7 @@
 
 <section class="hero">
   <img class="bg" src="assets/img/hero-instalacao-letras.jpg" alt="Lete Diedrichs pintando uma instalação de letras coloridas ao ar livre">
-  <div class="hero-content wrap" style="padding-left:0; padding-right:0;">
+  <div class="hero-content wrap">
     <div class="hero-eyebrow">Artista Plástica &amp; Muralista</div>
     <h1>Lete<br>Diedrichs</h1>
     <p class="tag">Transformo paredes, telas e vozes em <b>cor</b>. Arte plástica, murais que reinventam ambientes e aulas de canto presenciais — feitas com a mesma paixão de família.</p>
@@ -645,7 +723,7 @@
       </figure>
       <div class="canto-text">
         <div class="eyebrow">Professora de Canto</div>
-        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem); margin:14px 0 20px; color:#FBF6EA;">A voz também se pinta, nota por nota.</h2>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem); margin:14px 0 20px; color:var(--on-deep);">A voz também se pinta, nota por nota.</h2>
         <p>As aulas de canto de Lete são <strong>presenciais</strong> e pensadas para cada aluno — do primeiro contato com a própria voz até a construção de repertório e presença de palco. A mesma sensibilidade que guia o pincel guia também a respiração, a afinação e a interpretação.</p>
         <p class="canto-quote">"Arte é a forma que encontrei de contar histórias — seja com tinta, seja com a voz."</p>
       </div>
@@ -709,7 +787,7 @@
     background-color: #2B0843;
     color: #FFFFFF;
     border-top: 1px solid #581C87;
-    padding: 16px 24px;
+    padding: 22px clamp(24px, 5vw, 64px);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 13px;
     box-sizing: border-box;
