@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lete Diedrichs — Artista Plástica, Muralista &amp; Professora de Canto</title>
+<meta name="description" content="Lete Diedrichs transforma paredes, telas e vozes em cor: arte plástica, murais que reinventam ambientes e aulas de canto presenciais.">
+<meta name="author" content="Lete Diedrichs">
+<meta name="theme-color" content="#F8F3E7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23D6401B'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23F8F3E7'%3EL%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Lete Diedrichs — Artista Plástica, Muralista &amp; Professora de Canto">
+<meta property="og:description" content="Arte plástica, murais que reinventam ambientes e aulas de canto presenciais.">
+<meta property="og:image" content="assets/img/hero-instalacao-letras.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Work+Sans:wght@400;500;600;700&amp;family=Caveat:wght@500;600;700&amp;display=swap">
+</head>
+<body>
+<style>
+
+  :root {
+    --bg: #F8F3E7;
+    --bg-panel: #F0E7D2;
+    --surface: #FFFEFA;
+    --surface-2: #F8F1DE;
+    --ink: #241F1A;
+    --ink-soft: #5A5148;
+    --ink-faint: #857A6B;
+    --border: rgba(36,31,26,0.12);
+    /* paleta: Mural Tropical */
+    --blue: #2657A0;
+    --coral: #D6401B;
+    --yellow: #E3A62F;
+    --violet: #6A4791;
+    --green: #4C7A4A;
+    --shadow: 0 18px 40px -22px rgba(36,31,26,0.28);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #2E2718;
+      --bg-panel: #38301E;
+      --surface: #413824;
+      --surface-2: #4C4128;
+      --ink: #F6F0E1;
+      --ink-soft: #D6CBB2;
+      --ink-faint: #AD9F86;
+      --border: rgba(246,240,225,0.16);
+      --blue: #86AEEC;
+      --coral: #F29165;
+      --yellow: #F2C568;
+      --violet: #BC9FE2;
+      --green: #93C289;
+      --shadow: 0 22px 48px -20px rgba(0,0,0,0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #2E2718;
+    --bg-panel: #38301E;
+    --surface: #413824;
+    --surface-2: #4C4128;
+    --ink: #F6F0E1;
+    --ink-soft: #D6CBB2;
+    --ink-faint: #AD9F86;
+    --border: rgba(246,240,225,0.16);
+    --blue: #86AEEC;
+    --coral: #F29165;
+    --yellow: #F2C568;
+    --violet: #BC9FE2;
+    --green: #93C289;
+    --shadow: 0 22px 48px -20px rgba(0,0,0,0.5);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Work Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  img { max-width: 100%; display: block; }
+
+  h1, h2, h3 {
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    font-weight: 800;
+    line-height: 1.02;
+    text-wrap: balance;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .eyebrow {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .script {
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 64px);
+  }
+
+  /* ---------- swatch divider ---------- */
+  .swatches {
+    display: flex;
+    height: 14px;
+    width: 100%;
+  }
+  .swatches span { flex: 1; }
+  .swatches .c1 { background: var(--coral); }
+  .swatches .c2 { background: var(--yellow); }
+  .swatches .c3 { background: var(--blue); }
+  .swatches .c4 { background: var(--violet); }
+  .swatches .c5 { background: var(--green); }
+
+  /* ---------- header / nav ---------- */
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px clamp(20px, 5vw, 64px);
+  }
+  .nav .mark {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+  }
+  .nav .mark em { font-style: normal; color: var(--coral); }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(14px, 3vw, 30px);
+    margin: 0;
+    padding: 0;
+    font-size: 0.92rem;
+    font-weight: 500;
+  }
+  .nav ul a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    transition: color 0.2s ease;
+  }
+  .nav ul a:hover { color: var(--coral); }
+  .nav ul { display: none; }
+  @media (min-width: 720px) { .nav ul { display: flex; } }
+
+  /* ---------- hero ---------- */
+  .hero {
+    position: relative;
+    min-height: min(92vh, 820px);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .hero img.bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 68% 35%;
+    transform: scale(1.02);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgba(15,12,8,0.86) 0%, rgba(15,12,8,0.42) 42%, rgba(15,12,8,0.12) 62%, rgba(15,12,8,0.34) 100%),
+      linear-gradient(100deg, rgba(15,12,8,0.55) 0%, rgba(15,12,8,0) 46%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 clamp(20px, 5vw, 64px) clamp(40px, 6vw, 76px);
+    color: #F6F1E4;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #E9DFC6;
+    margin-bottom: 18px;
+    opacity: 0;
+    animation: rise 0.4s 0.05s ease forwards;
+  }
+  .hero-eyebrow::before {
+    content: "";
+    width: 26px;
+    height: 2px;
+    background: var(--coral);
+  }
+  .hero h1 {
+    font-size: clamp(3rem, 9vw, 6.4rem);
+    color: #FBF6EA;
+    opacity: 0;
+    animation: rise 0.45s 0.1s ease forwards;
+  }
+  .hero p.tag {
+    margin-top: 18px;
+    max-width: 46ch;
+    font-size: clamp(1.05rem, 2vw, 1.32rem);
+    color: #EFE6D2;
+    font-weight: 400;
+    opacity: 0;
+    animation: rise 0.45s 0.16s ease forwards;
+  }
+  .hero p.tag b { color: #FBF6EA; font-weight: 600; }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+    opacity: 0;
+    animation: rise 0.45s 0.22s ease forwards;
+  }
+  .role-pill {
+    border: 1px solid rgba(251,246,234,0.35);
+    color: #FBF6EA;
+    background: rgba(20,16,10,0.28);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ---------- section shell ---------- */
+  section { position: relative; }
+  .section-pad { padding: clamp(64px, 10vw, 120px) 0; }
+  .section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: clamp(36px, 6vw, 56px);
+    max-width: 62ch;
+  }
+  .section-head h2 { font-size: clamp(2rem, 4.4vw, 3rem); }
+  .section-head p { color: var(--ink-soft); font-size: 1.06rem; line-height: 1.6; margin: 0; }
+
+  /* ---------- sobre ---------- */
+  .sobre { background: var(--bg); }
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 44px;
+    align-items: start;
+  }
+  @media (min-width: 860px) {
+    .sobre-grid { grid-template-columns: 1.1fr 0.9fr; }
+  }
+  .sobre-text p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .sobre-text p + p { margin-top: 1.1em; }
+  .sobre-text strong { color: var(--ink); font-weight: 600; }
+
+  .areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 32px;
+  }
+  .area-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 18px 16px;
+    box-shadow: var(--shadow);
+  }
+  .area-card .swatch-dot {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  .area-card h3 { font-size: 1.02rem; font-weight: 700; font-family: 'Work Sans', sans-serif; }
+  .area-card p { margin: 6px 0 0; font-size: 0.88rem; color: var(--ink-faint); line-height: 1.5; }
+
+  .portrait-card {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 14px;
+    box-shadow: var(--shadow);
+    transform: rotate(-1.4deg);
+  }
+  .portrait-card img { border: 1px solid var(--border); }
+  .portrait-card figcaption {
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+    color: var(--ink-soft);
+    padding: 10px 6px 2px;
+  }
+
+  /* ---------- muralista gallery ---------- */
+  .muralista { background: var(--bg-panel); }
+  .gal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 700px) {
+    .gal-grid { grid-template-columns: repeat(6, 1fr); }
+    .gal-grid figure:nth-child(1) { grid-column: span 4; }
+    .gal-grid figure:nth-child(2) { grid-column: span 2; }
+    .gal-grid figure:nth-child(3) { grid-column: span 6; }
+  }
+  .gal-grid figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .gal-grid figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    transition: transform 0.6s ease;
+  }
+  .gal-grid figure:nth-child(3) img { aspect-ratio: 16 / 8; }
+  .gal-grid figure:hover img { transform: scale(1.04); }
+  .gal-grid figcaption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 18px 18px 14px;
+    background: linear-gradient(0deg, rgba(15,12,8,0.82), rgba(15,12,8,0));
+    color: #F6F1E4;
+    font-size: 0.92rem;
+    font-weight: 500;
+  }
+  .gal-grid figcaption span {
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #E9DFC6;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  /* ---------- canto (stage panel) ---------- */
+  .canto {
+    background: #35301D;
+    color: #F8F2E4;
+  }
+  .canto .eyebrow, .canto .section-head p { color: #D3C7AA; }
+  .canto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (min-width: 860px) {
+    .canto-grid { grid-template-columns: 0.85fr 1.15fr; }
+  }
+  .canto-photo {
+    position: relative;
+    border: 1px solid rgba(243,236,219,0.18);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.7);
+  }
+  .canto-photo img { aspect-ratio: 4/5; object-fit: cover; }
+  .canto-photo::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.55));
+    pointer-events: none;
+  }
+  .canto-text p {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: #E6DCC5;
+    max-width: 52ch;
+  }
+  .canto-text p + p { margin-top: 1.1em; }
+  .canto-text strong { color: #F8F2E4; }
+  .canto-quote {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 2px solid var(--coral);
+    font-family: 'Caveat', cursive;
+    font-size: 1.7rem;
+    color: #F2C568;
+    line-height: 1.3;
+  }
+
+  /* ---------- familia ---------- */
+  .familia { background: var(--bg); }
+  .familia-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (min-width: 860px) {
+    .familia-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .familia-photo {
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .familia-photo img { aspect-ratio: 5/6; object-fit: cover; object-position: 50% 20%; }
+  .familia-text p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 52ch;
+  }
+  .familia-text p + p { margin-top: 1.1em; }
+  .familia-text strong { color: var(--ink); }
+
+  /* ---------- contato ---------- */
+  .contato {
+    background: var(--bg-panel);
+    text-align: left;
+  }
+  .contato-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 62ch;
+  }
+  .contato h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+  .contato p { font-size: 1.08rem; line-height: 1.7; color: var(--ink-soft); }
+  .contato-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    width: fit-content;
+  }
+  .contato-note .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--yellow);
+    flex-shrink: 0;
+  }
+  .social-line {
+    font-size: 0.95rem;
+    color: var(--ink-faint);
+  }
+  .social-line b { color: var(--ink); }
+
+  footer.site {
+    padding: 26px clamp(20px, 5vw, 64px);
+    background: var(--bg-panel);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+  }
+</style>
+
+<header class="site">
+  <nav class="nav">
+    <span class="mark">Lete <em>Diedrichs</em></span>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#muralista">Arte em Parede</a></li>
+      <li><a href="#canto">Aulas de Canto</a></li>
+      <li><a href="#familia">Família &amp; Arte</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <img class="bg" src="assets/img/hero-instalacao-letras.jpg" alt="Lete Diedrichs pintando uma instalação de letras coloridas ao ar livre">
+  <div class="hero-content wrap" style="padding-left:0; padding-right:0;">
+    <div class="hero-eyebrow">Artista Plástica &amp; Muralista</div>
+    <h1>Lete<br>Diedrichs</h1>
+    <p class="tag">Transformo paredes, telas e vozes em <b>cor</b>. Arte plástica, murais que reinventam ambientes e aulas de canto presenciais — feitas com a mesma paixão de família.</p>
+    <div class="roles">
+      <span class="role-pill">Artista Plástica</span>
+      <span class="role-pill">Muralista</span>
+      <span class="role-pill">Professora de Canto</span>
+    </div>
+  </div>
+</section>
+
+<div class="swatches"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span></div>
+
+<section class="sobre" id="sobre">
+  <div class="wrap section-pad">
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <div class="eyebrow" style="margin-bottom:14px;">Sobre a Lete</div>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem); margin-bottom:20px;">Cor, voz e ofício — tudo na família.</h2>
+        <p>Lete Diedrichs é <strong>artista plástica e muralista</strong>, conhecida por transformar paredes e ambientes em grandes composições coloridas — de letreiros e fachadas a murais figurativos pintados à mão. Ao lado da pintura, é também <strong>professora de canto</strong>, com aulas presenciais dedicadas a quem quer descobrir e desenvolver a própria voz.</p>
+        <p>Seu trabalho circula entre a tela, a parede e o palco: pinta em ateliê, em obras externas e compartilha esse universo com a família — que também é tela, aluno e plateia.</p>
+        <div class="areas">
+          <div class="area-card">
+            <div class="swatch-dot" style="background:var(--coral);"></div>
+            <h3>Artista Plástica</h3>
+            <p>Pintura em tela e composições autorais.</p>
+          </div>
+          <div class="area-card">
+            <div class="swatch-dot" style="background:var(--blue);"></div>
+            <h3>Muralista</h3>
+            <p>Arte em parede — transformando ambientes.</p>
+          </div>
+          <div class="area-card">
+            <div class="swatch-dot" style="background:var(--violet);"></div>
+            <h3>Professora de Canto</h3>
+            <p>Aulas presenciais, no ritmo de cada aluno.</p>
+          </div>
+          <div class="area-card">
+            <div class="swatch-dot" style="background:var(--yellow);"></div>
+            <h3>Família &amp; Arte</h3>
+            <p>Um jeito de criar que se compartilha em casa.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="portrait-card">
+        <img loading="lazy" decoding="async" src="assets/img/retrato-entrevista-radio.jpg" alt="Retrato de Lete Diedrichs sorrindo em frente a um microfone de rádio">
+        <figcaption>"Entre tintas e melodias" — Lete em entrevista de rádio</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="muralista" id="muralista">
+  <div class="wrap section-pad">
+    <div class="section-head">
+      <div class="eyebrow">Arte em Parede</div>
+      <h2>Murais que transformam ambientes</h2>
+      <p>De letreiros escultóricos a fachadas pintadas à mão, cada parede vira uma composição só sua — pensada para o espaço, a luz e quem vai passar por ali todos os dias.</p>
+    </div>
+    <div class="gal-grid">
+      <figure><img loading="lazy" decoding="async" src="assets/img/hero-instalacao-letras.jpg" alt="Lete pintando uma grande instalação de letras em cores geométricas vibrantes"><figcaption><span>Instalação</span>Letreiro escultórico em geometria colorida</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/img/mural-fachada-trofeu.jpg" alt="Lete pintando um mural com uma taça de troféu dourada em fachada de loja"><figcaption><span>Fachada</span>Mural comemorativo em loja</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/img/mural-trompe-loeil-italiana.jpg" alt="Mural em trompe l'oeil retratando uma fachada italiana com pizzaria e varanda florida"><figcaption><span>Trompe-l'œil</span>Fachada italiana pintada em parede real</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="canto" id="canto">
+  <div class="wrap section-pad">
+    <div class="canto-grid">
+      <figure class="canto-photo">
+        <img loading="lazy" decoding="async" src="assets/img/retrato-entrevista-radio.jpg" alt="Lete Diedrichs sorrindo durante entrevista de rádio, com microfone em primeiro plano">
+      </figure>
+      <div class="canto-text">
+        <div class="eyebrow">Professora de Canto</div>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem); margin:14px 0 20px; color:#FBF6EA;">A voz também se pinta, nota por nota.</h2>
+        <p>As aulas de canto de Lete são <strong>presenciais</strong> e pensadas para cada aluno — do primeiro contato com a própria voz até a construção de repertório e presença de palco. A mesma sensibilidade que guia o pincel guia também a respiração, a afinação e a interpretação.</p>
+        <p class="canto-quote">"Arte é a forma que encontrei de contar histórias — seja com tinta, seja com a voz."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="familia" id="familia">
+  <div class="wrap section-pad">
+    <div class="familia-grid">
+      <figure class="familia-photo">
+        <img loading="lazy" decoding="async" src="assets/img/familia-pintura-ar-livre.jpg" alt="Lete Diedrichs pintando uma tela ao ar livre, sorrindo ao lado de duas mulheres">
+      </figure>
+      <div class="familia-text">
+        <div class="eyebrow" style="margin-bottom:14px;">Família &amp; Arte</div>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem); margin-bottom:20px;">Pintar é também um jeito de estar junto.</h2>
+        <p>Para Lete, arte e família caminham lado a lado. Momentos de pintura viram encontro, ensino e memória — telas montadas ao ar livre, pincel dividido entre gerações e a mesma alegria de criar acompanhando cada etapa.</p>
+        <p>É esse espírito — de oficina aberta, afetiva e sem pressa — que também aparece nas aulas de canto e nos murais: <strong>arte feita para ser compartilhada</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap section-pad">
+    <div class="contato-inner">
+      <div class="eyebrow">Contato</div>
+      <h2>Vamos colorir o próximo projeto?</h2>
+      <p>Seja um mural para transformar um ambiente, uma tela autoral ou aulas de canto presenciais — Lete Diedrichs está sempre pronta para uma nova composição.</p>
+      <div class="contato-note"><span class="dot"></span> Canais de contato em atualização — em breve por aqui.</div>
+      <div class="social-line">Encontre a Lete também no Facebook e Instagram, buscando por <b>Lete Diedrichs</b>.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <span>© Lete Diedrichs — Artista Plástica, Muralista &amp; Professora de Canto</span>
+  <span>Site criado com carinho, cor a cor.</span>
+</footer>
+
+<!-- ========================================== -->
+<!-- PIXEL NEXO FOOTER SIGNATURE                -->
+<!-- ========================================== -->
+<style>
+  .pixel-nexo-footer {
+    background-color: #2B0843;
+    color: #FFFFFF;
+    border-top: 1px solid #581C87;
+    padding: 16px 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .pixel-nexo-footer * {
+    box-sizing: border-box;
+  }
+  .pixel-nexo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .pixel-nexo-left, .pixel-nexo-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .pixel-nexo-tagline {
+    background-color: #581C8740;
+    border: 1px solid #FFD00040;
+    color: #FFD000;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pixel-nexo-link {
+    color: #C4B5FD;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pixel-nexo-link:hover {
+    color: #FFD000;
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .pixel-nexo-container {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .pixel-nexo-left, .pixel-nexo-right {
+      justify-content: center;
+    }
+  }
+</style>
+
+<footer class="pixel-nexo-footer">
+  <div class="pixel-nexo-container">
+    <div class="pixel-nexo-left">
+      <a href="https://www.pixelnexo.com.br" target="_blank" rel="noopener noreferrer" title="Pixel Nexo" style="display: flex; align-items: center; text-decoration: none;">
+        <svg style="height: 26px; width: auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 36" width="150" height="36" fill="none">
+  <!-- Pixel Nexo Emblem -->
+  <g transform="translate(2, 4)">
+    <path d="M14 2L24 7.77V19.33L14 25.1L4 19.33V7.77L14 2Z" stroke="#FFD000" stroke-width="2.2" stroke-linejoin="round"/>
+    <circle cx="14" cy="13.5" r="3" fill="#FFD000"/>
+    <path d="M14 5V10M14 17V22M6.5 9.5L11 12M17 15L21.5 17.5M6.5 17.5L11 15M17 12L21.5 9.5" stroke="#FFD000" stroke-width="1.4" stroke-linecap="round"/>
+    <rect x="28" y="5" width="4" height="4" rx="0.8" fill="#FFD000"/>
+    <rect x="34" y="5" width="4" height="4" rx="0.8" fill="#FFD000"/>
+    <rect x="40" y="5" width="4" height="4" rx="0.8" fill="#FFD000"/>
+    <rect x="28" y="11" width="4" height="4" rx="0.8" fill="#FFD000" opacity="0.9"/>
+    <rect x="34" y="11" width="4" height="4" rx="0.8" fill="#FFD000"/>
+    <rect x="40" y="11" width="4" height="4" rx="0.8" fill="#FFD000" opacity="0.5"/>
+    <rect x="28" y="17" width="4" height="4" rx="0.8" fill="#FFD000" opacity="0.7"/>
+    <rect x="34" y="17" width="4" height="4" rx="0.8" fill="#FFD000" opacity="0.8"/>
+    <rect x="40" y="17" width="4" height="4" rx="0.8" fill="#FFD000"/>
+  </g>
+  <!-- Typography -->
+  <text x="56" y="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" letter-spacing="2.2">PIXEL</text>
+  <text x="56" y="28" fill="#FFD000" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="13" letter-spacing="1.8">NEXO</text>
+</svg>
+      </a>
+      <span style="color: #C4B5FD;">© 2026 Pixel Nexo</span>
+    </div>
+
+    <div class="pixel-nexo-tagline">APK · PWA · WEBSITES</div>
+
+    <div class="pixel-nexo-right">
+      <a href="https://www.pixelnexo.com.br" target="_blank" rel="noopener noreferrer" class="pixel-nexo-link">🌐 www.pixelnexo.com.br</a>
+      <a href="https://instagram.com/pixelnexo.br" target="_blank" rel="noopener noreferrer" class="pixel-nexo-link">📸 @pixelnexo.br</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
