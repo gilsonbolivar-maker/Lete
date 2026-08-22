@@ -6,7 +6,7 @@
 <title>Lete Diedrichs — Artista Plástica, Muralista &amp; Professora de Canto</title>
 <meta name="description" content="Lete Diedrichs transforma paredes, telas e vozes em cor: arte plástica, murais que reinventam ambientes e aulas de canto presenciais.">
 <meta name="author" content="Lete Diedrichs">
-<meta name="theme-color" content="#F5F2EA">
+<meta name="theme-color" content="#17332F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23D6401B'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23F8F3E7'%3EL%3C/text%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
@@ -212,9 +212,10 @@
     position: sticky;
     top: 0;
     z-index: 40;
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    /* mesmo verde da faixa das aulas de canto, nos dois temas */
+    background: color-mix(in srgb, var(--deep) 92%, transparent);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(239, 246, 241, 0.14);
   }
   .nav {
     display: flex;
@@ -230,7 +231,8 @@
     font-size: 1.15rem;
     letter-spacing: -0.02em;
   }
-  .nav .mark em { font-style: normal; color: var(--coral); }
+  .nav .mark { color: var(--on-deep); }
+  .nav .mark em { font-style: normal; color: var(--deep-accent); }
   .nav ul {
     list-style: none;
     display: flex;
@@ -242,10 +244,10 @@
   }
   .nav ul a {
     text-decoration: none;
-    color: var(--ink-soft);
+    color: var(--on-deep-soft);
     transition: color 0.2s ease;
   }
-  .nav ul a:hover { color: var(--coral); }
+  .nav ul a:hover { color: var(--deep-accent); }
   .nav ul { display: none; }
   @media (min-width: 720px) { .nav ul { display: flex; } }
 
